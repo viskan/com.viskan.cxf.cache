@@ -23,12 +23,13 @@ Usage
 =====
 
 From Java:
+    
     JAXRSServerFactoryBean sf = new JAXRSServerFactoryBean();
 
     ICachingProvider cachingProvider = ...
     
     CachingFeature cachingFeature = new CachingFeature();
-		cachingFeature.setCachingProvider(cachingProvider);
+    cachingFeature.setCachingProvider(cachingProvider);
 		
-		sf.setFeatures(Arrays.asList((cachingFeature)));
+    sf.setFeatures(Arrays.asList((cachingFeature)));
 		
